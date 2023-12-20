@@ -1,23 +1,3 @@
-# class Kategoriyayalar:
-#     def __init__(self, salat, yemek, icki):
-#         self.salat = salat
-#         self.yemek = yemek
-#         self.icki = icki
-        
-#     def exhibit(self):
-#         print(self.salat)
-#         print(self.yemek)
-#         print(self.icki)
-        
-# class Menyu:
-#     def __init__(self, cesidler):
-#         self.cesidler = cesidler
-        
-#     def cesid_exhibit(self):
-#         for index, cesid in enumerate(self.cesidler, start=1):
-#             print(f"Cesid numayis olunur: {index}")
-
-
 class Kategoriya:
     def __init__(self, ad, cesidler):
         self.ad = ad
@@ -83,11 +63,7 @@ class Menu:
                     print("Olmayan yemek nomresi!")
         print(f"Sizin cekiniz:",report)
         print(f"Sifarişinizin toplam miqdari: {toplam_mebleg} AZN")
-
-# Menynu hazirdir
-menu = Menu()
-menu.sifaris_gotur()
-
-
-       
         
+        
+menu = Menu()
+menu.sifaris_gotur()     

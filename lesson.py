@@ -39,41 +39,39 @@
         
         
         
-class Menu:
+# file_text = open("Codes/data.txt","r")
+
+# a = file_text.read()
+# list_a = []
+# for item in a.split(","):
+#     if int(item)%2 == 0:
+#         list_a.append(int(item))
     
-    def menyu_goster(self, kategoriya):
-        if kategoriya in self.kategoriyalar:
-            self.kategoriyalar[kategoriya].cesid_exhibit()  
-        else:
-            print("Geçersiz kategoriya!")
+# file_text_2 = open("Codes/netice.txt","w")
 
-    def sifaris_gotur(self):
-        toplam_mebleg = 0
-        while True:
-            secilen_kategoriya = self.kategoriya_sec()
-            if secilen_kategoriya == 'Finish':
-                break
-            else:
-                self.menyu_goster(secilen_kategoriya)
-                secilen_yemek = int(input("Zehmet olmasa bir yemek nomresi seçin ve ya '0' yazaraq bitirin: "))
-                if secilen_yemek == 0:
-                    break
-                elif secilen_yemek <= len(self.kategoriyalar[secilen_kategoriya].cesidler):
-                    qiymet = self.kategoriyalar[secilen_kategoriya].cesidler[secilen_yemek - 1]['qiymet']
-                    yemek_adi = self.kategoriyalar[secilen_kategoriya].cesidler[secilen_yemek - 1]['ad']
-                    print(f"{yemek_adi} seçildi. Qiymeti: {qiymet} AZN")
-                    toplam_mebleg += qiymet  
-                else:
-                    print("Olmayan yemek nomresi!")
-        
-        print(f"Sifarişinizin toplam miqdari: {toplam_mebleg} AZN")
+# for item in list_a:
+#     file_text_2.write(str(item)+",")
 
-menu = Menu()
-menu.sifaris_gotur()
+class Dog:
+    species = "Canis familiaris"
+
+    def __init__(self, name, age, breed):
+        self.name = name
+        self.age = age
+        self.breed = breed
+
+    def __str__(self):
+        return f"{self.name} is {self.age} years old"
+
+    def speak(self, sound):
+        return f"{self.name} says {sound}"
 
 
 
+class JackRussellTerrier(Dog):
+    def speak(self):
+        return f"{self.name} mew mew"
 
-
-
- 
+class Dachshund(Dog):
+    def speak(self):
+        return f"{self.name} says how how"

@@ -1,0 +1,9 @@
+Listlər
+ Siyahı yaradın və bu siyahının... elementlərini tərsinə çevirin.
+ Siyahı yaradın və bu siyahıya elementlərin cəmi hesablayın. sum() funksiyasını işlətməyin.
+ Siyahı yaradın və bu siyahıdakı... elementləri kiçikdən böyüyə və ya böyüyün kiçiyinə sıralayın. İki üsulla yazın. Həm hazır list funksiyasından istifadə edərək. Həm etməyərək.
+ Verilmiş siyahıdakı bütün dublikat elementləri silmək üçün proqram yazın.
+ İki siyahı yaradın və bu iki siyahının... kəsişməsini (ümumi elementlərini) tapan proqram yazın.
+ Siyahıdakı elementlərin ədədi ortasını və medianını hesablayan proqram yazın.
+ Siyahı yaradın və bu siyahıdakı elementləri... elementin sayına görə çeşidləyən proqram yazın.
+ Siyahıdakı bütün sadə ədədləri tapan proqram yazın.
